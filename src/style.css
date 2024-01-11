@@ -4,11 +4,13 @@
 
 body {
   font-family: "Karla", sans-serif;
-  margin: 0;
+  margin: 0 auto;
+  width: 600px;
 }
 
 main{
   padding: 36px;
+  
 }
 
 .header {
@@ -57,4 +59,48 @@ main{
   color: white;
   border: none;
   cursor: pointer;
+  
+}
+
+.meme {
+  position: relative;
+  
+}
+
+.meme__image {
+  max-width: 100%;
+  border-radius: 5px;
+  padding-top: 15px;
+}
+
+.meme__text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000,
+              -2px -2px 0 #000,
+              2px -2px 0 #000,
+              -2px 2px 0 #000,
+              0 2px 0 #000,
+              2px 0 0 #000,
+              0 -2px 0 #000,
+              -2px 0 0 #000,
+              2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
 }
